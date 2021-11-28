@@ -1,0 +1,144 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f7bc1ef33a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title> Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Enter a City"
+                autofocus="on"
+                autocomplete="off"
+                id="search-text-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="search-button" />
+            </div>
+            <div class="col-3">
+              <button
+                type="submit"
+                class="current-location-button"
+                id="current-location-button"
+              >
+                📍Current Location
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1>
+          <div class="current-weather">
+            <div class="city" id="current-city">New York</div>
+          </div>
+        </h1>
+        <ul>
+          <li id="date"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="today d-flex align-items-center">
+              <img src="" alt="Clear" id="icon" class="" />
+              <div class="">
+                <span class="temperature" id="temperature">19</span>
+                <span class="units">
+                  <a href="#" id="tempC">°C</a> | <a href="#" id="tempF">°F</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <div class="class-description">
+                Conditions: <span id="description">Snowing</span>
+              </div>
+              <div class="class-humidity">
+                Humidity: <span id="humidity">20</span>%
+              </div>
+              <div class="class-wind">Wind: <span id="wind">30</span> km/h</div>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div class="container">
+          <div class="row">
+            <div class="col weatherWed">
+              Thursday
+              <br />
+              🌨
+              <br />
+              -7° | -8°
+            </div>
+            <div class="col weatherFri">
+              Friday
+              <br />
+              🌨
+              <br />
+              -5° | -9°
+            </div>
+            <div class="col weatherSat">
+              Saturday
+              <br />
+              ⛅️
+              <br />
+              -8° | -11°
+            </div>
+            <div class="col weatherSun">
+              Sunday
+              <br />
+              ⛅️
+              <br />
+              -8° | -13°
+            </div>
+            <div class="col weatherMon">
+              Monday
+              <br />
+              ☀️
+              <br />
+              -9° | -14°
+            </div>
+            <div class="col weatherTue">
+              Tuesday
+              <br />
+              🌦
+              <br />
+              -9° | -13°
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p class="source-code">
+      <a href="https://github.com/AMJeffries/my-weather-app" target="_blank"
+        >Open Source code</a
+      >
+      Coded by Elham Akbari
+      <script src="src/index.js"></script>
+    </p>
+  </body>
+</html>
