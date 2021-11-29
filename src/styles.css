@@ -49,6 +49,8 @@ form {
     rgb(227, 237, 245) 0.3%,
     rgb(130, 149, 255) 90.5%
   );
+  text-align: center;
+  padding:0 px ;
 }
 
 .container-footer {
