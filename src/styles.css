@@ -10,7 +10,7 @@ form {
 #searchCity {
   flex: 1;
   margin-right: 5px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .body {
@@ -27,14 +27,18 @@ form {
 }
 
 .total {
-  background:
-   linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+  background: linear-gradient(
+    13.6deg,
+    rgb(80, 154, 175) 11.2%,
+    rgb(125, 216, 199) 59.3%,
+    rgb(245, 255, 195) 92.7%
+  );
 }
 
 .card-body-footer {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+}
 
 .container-footer {
   text-align: center;
@@ -137,7 +141,7 @@ form {
 
 #btn-group .active {
   cursor: default;
-  color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+  color: rgb(33,33,33);
 }
 
 #btn-group .active:hover {
