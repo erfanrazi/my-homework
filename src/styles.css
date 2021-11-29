@@ -10,7 +10,7 @@ form {
 #searchCity {
   flex: 1;
   margin-right: 5px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .body {
@@ -34,6 +34,9 @@ form {
 .card-body-footer {
   display: flex;
   justify-content: space-around;
+  background: radial-gradient(
+    253px at 12.6% 77.9%,
+    rgb(243, 238, 236),rgb(190, 217, 241),rgb(120, 211, 247));
 }
 
 .container-footer {
@@ -137,7 +140,7 @@ form {
 
 #btn-group .active {
   cursor: default;
-  color: rgb(33,33,33);
+  color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 #btn-group .active:hover {
