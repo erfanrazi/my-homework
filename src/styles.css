@@ -17,10 +17,7 @@ form {
   margin: 15px 0;
   background: radial-gradient(
     253px at 12.6% 77.9%,
-    rgb(221, 255, 214) 0.3%,
-    rgb(214, 254, 254) 90.5%
-  );
-}
+    rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 
 .container-total {
   width: 600px;
@@ -28,9 +25,8 @@ form {
 
 .total {
   background: linear-gradient(
-    linear-gradient(to right, rgb(100, 172, 240), rgb(243, 238, 236));
-  );
-}
+    linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+}و
 
 .card-body-footer {
   display: flex;
@@ -71,11 +67,11 @@ form {
 .date,
 .wind,
 .humid {
-  margin-bottom: 5px;
+  margin-bottom: 8 px;
 }
 
 .footer {
- linear-gradient(to right, rgb(100, 172, 240), rgb(243, 238, 236));
+  rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .weather-today {
@@ -115,12 +111,13 @@ form {
   font-size: 30px;
   padding: 0;
   font-weight: 300;
+  border-radius: 5px;
 }
 
 .deg, .far {
   font-size: 18px;
   text-decoration: none;
-  color: rgb(48, 157, 207);
+  color: rgb(72, 48, 207);
 }
 
 #seperate {
