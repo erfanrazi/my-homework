@@ -10,7 +10,7 @@ form {
 #searchCity {
   flex: 1;
   margin-right: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .body {
@@ -27,7 +27,7 @@ form {
 }
 
 .total {
- background: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+ background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .card-body-footer {
@@ -40,7 +40,8 @@ form {
 }
 
 .weather {
-  font-size: 25px;
+   background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+  font-size: 30px;
   padding: 5px 0;
 }
 
@@ -73,7 +74,8 @@ form {
 }
 
 .footer {
-  background: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));}
+  background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+}
 
 .weather-today {
   margin-left: -30px;
@@ -118,7 +120,7 @@ form {
 .deg, .far {
   font-size: 18px;
   text-decoration: none;
-  color: rgb(48, 157, 207);
+  color: rgb(72, 48, 207);
 }
 
 #seperate {
@@ -132,7 +134,7 @@ form {
 
 #btn-group .active {
   cursor: default;
-  color: rgb(258,20,11);
+ color: rgb(72, 48, 207);
   border-radius: 5px;
 }
 
