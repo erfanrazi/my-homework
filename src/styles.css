@@ -1,5 +1,6 @@
 body {
-  font-family: sans-serif;
+  font-family: arial, sans-serif;
+  background-color: #6291e7;
   margin: 50px auto;
 }
 
@@ -11,6 +12,23 @@ form {
   flex: 1;
   margin-right: 5px;
   border-radius: 5px;
+   border-radius: 50px;
+   background: linear-gradient(to right, rgb(148, 171, 236), rgb(243, 238, 236));
+   transition: all 100ms ease;
+  box-shadow: rgba(37, 39, 89, 0.09) 0px 10px 10px 0;
+  cursor: pointer;
+  display: inline;
+}
+#searchCity :hover {
+  opacity: 0.9;
+  display: block;
+  margin: 0 auto;
+  background: #31a4da;
+  color: white;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
 }
 
 .body {
@@ -141,7 +159,7 @@ form {
 
 #btn-group .active {
   cursor: default;
-  color: rgb(33,33,33);
+  background: linear-gradient(#dfeef5, #3a7bf3, #a15aa3);
 }
 
 #btn-group .active:hover {
