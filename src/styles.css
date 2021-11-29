@@ -71,7 +71,6 @@ form {
 .weather-body {
   display: flex;
   justify-content: space-between;
-  color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .weather-detail {
@@ -126,8 +125,6 @@ form {
 
 .weather-temperature button {
   border: none;
-  border-radius: 5px;
- color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
   background-color: transparent;
   font-size: 30px;
   padding: 0;
