@@ -96,22 +96,36 @@ function inputCity(event) {
   let city = document.querySelector("#search-text-input").value;
   searchCity(city);
 }
+function showTemperature(response) {
+  let temperature = Math.round(response.data.main.temp);
+  let city = document.querySelector("#temperature");
+  city.innerHTML = temperature;
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = response.data.name;
+  celsiusTemperature = response.data.main.temp;
+     let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].description;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  let humidity =document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
-//Current Location Button
-function searchLocation(position) {
-  let apiKey = "6c82a58819cbb0ce59c73db9b027095f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeather);
+    getForecast(response.data.coord);
+
 }
 
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "baf56f4471be4826660e97693ea45c45";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
 }
 
-let submit = document.querySelector("#search-form");
-submit.addEventListener("submit", inputCity);
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+navigator.geolocation.getCurrentPosition(showPosition);
+
 
 searchCity("New Yourk");
