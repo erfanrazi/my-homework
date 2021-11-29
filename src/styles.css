@@ -17,16 +17,19 @@ form {
   margin: 15px 0;
   background: radial-gradient(
     253px at 12.6% 77.9%,
-    rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+    rgb(221, 255, 214) 0.3%,
+    rgb(214, 254, 254) 90.5%
+  );
+}
 
 .container-total {
   width: 600px;
 }
 
 .total {
-  background: linear-gradient(
-    linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
-}و
+  background:
+   linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+}
 
 .card-body-footer {
   display: flex;
@@ -67,11 +70,15 @@ form {
 .date,
 .wind,
 .humid {
-  margin-bottom: 8 px;
+  margin-bottom: 5px;
 }
 
 .footer {
-  rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+  background: radial-gradient(
+    253px at 12.6% 77.9%,
+    rgb(221, 255, 214) 0.3%,
+    rgb(214, 254, 254) 90.5%
+  );
 }
 
 .weather-today {
@@ -111,13 +118,12 @@ form {
   font-size: 30px;
   padding: 0;
   font-weight: 300;
-  border-radius: 5px;
 }
 
 .deg, .far {
   font-size: 18px;
   text-decoration: none;
-  color: rgb(72, 48, 207);
+  color: rgb(48, 157, 207);
 }
 
 #seperate {
@@ -132,7 +138,6 @@ form {
 #btn-group .active {
   cursor: default;
   color: rgb(33,33,33);
-  border-radius: 50px;
 }
 
 #btn-group .active:hover {
