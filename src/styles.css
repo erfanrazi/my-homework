@@ -33,6 +33,7 @@ form {
 .card-body-footer {
   display: flex;
   justify-content: space-around;
+   background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .container-footer {
@@ -50,6 +51,7 @@ form {
   justify-content: space-between;
   padding-right: 20px;
   align-items: center;
+   background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .temp span {
@@ -134,8 +136,8 @@ form {
 
 #btn-group .active {
   cursor: default;
- color: rgb(72, 48, 207);
-  border-radius: 5px;
+ background-color: rgb(72, 48, 207);
+  border-radius: 20px;
 }
 
 #btn-group .active:hover {
