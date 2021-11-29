@@ -6,7 +6,13 @@ body {
 form {
   display: flex;
 }
-
+.total {
+  background: linear-gradient(
+    13.6deg,
+    rgb(149, 199, 240) 0.3%,
+    rgb(72, 97, 236) 90.5%
+  );
+}
 #searchCity {
   flex: 1;
   margin-right: 5px;
@@ -83,9 +89,9 @@ form {
   background: radial-gradient(
     253px at 12.6% 77.9%,
     rgb(149, 199, 240) 0.3%,
-    rgb(72, 97, 236) 90.5%,
+    rgb(72, 97, 236) 90.5%
+  );
 }
-
 .weather-today {
   margin-left: -30px;
 }
