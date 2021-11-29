@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
   margin: 50px auto;
 }
 
@@ -51,7 +51,7 @@ form {
   justify-content: space-between;
   padding-right: 20px;
   align-items: center;
-   background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+  color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .temp span {
@@ -62,6 +62,7 @@ form {
 .weather-body {
   display: flex;
   justify-content: space-between;
+  color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .weather-detail {
@@ -76,7 +77,7 @@ form {
 }
 
 .footer {
-  background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+ color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .weather-today {
@@ -113,6 +114,7 @@ form {
 .weather-temperature button {
   border: none;
   border-radius: 5px;
+ color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
   background-color: transparent;
   font-size: 30px;
   padding: 0;
@@ -136,7 +138,7 @@ form {
 
 #btn-group .active {
   cursor: default;
- background-color: rgb(72, 48, 207);
+color: rgb(72, 48, 207);
   border-radius: 20px;
 }
 
