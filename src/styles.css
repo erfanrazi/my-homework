@@ -28,10 +28,7 @@ form {
 
 .total {
   background: linear-gradient(
-    13.6deg,
-    rgb(80, 154, 175) 11.2%,
-    rgb(125, 216, 199) 59.3%,
-    rgb(245, 255, 195) 92.7%
+    linear-gradient(to right, rgb(100, 172, 240), rgb(243, 238, 236));
   );
 }
 
@@ -78,11 +75,7 @@ form {
 }
 
 .footer {
-  background: radial-gradient(
-    253px at 12.6% 77.9%,
-    rgb(221, 255, 214) 0.3%,
-    rgb(214, 254, 254) 90.5%
-  );
+ linear-gradient(to right, rgb(100, 172, 240), rgb(243, 238, 236));
 }
 
 .weather-today {
@@ -142,6 +135,7 @@ form {
 #btn-group .active {
   cursor: default;
   color: rgb(33,33,33);
+  border-radius: 50px;
 }
 
 #btn-group .active:hover {
