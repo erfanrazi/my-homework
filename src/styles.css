@@ -27,12 +27,7 @@ form {
 }
 
 .total {
-  background: linear-gradient(
-    13.6deg,
-    rgb(80, 154, 175) 11.2%,
-    rgb(125, 216, 199) 59.3%,
-    rgb(245, 255, 195) 92.7%
-  );
+ background: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .card-body-footer {
@@ -78,12 +73,7 @@ form {
 }
 
 .footer {
-  background: radial-gradient(
-    253px at 12.6% 77.9%,
-    rgb(221, 255, 214) 0.3%,
-    rgb(214, 254, 254) 90.5%
-  );
-}
+  background: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));}
 
 .weather-today {
   margin-left: -30px;
@@ -118,6 +108,7 @@ form {
 
 .weather-temperature button {
   border: none;
+  border-radius: 5px;
   background-color: transparent;
   font-size: 30px;
   padding: 0;
@@ -141,7 +132,8 @@ form {
 
 #btn-group .active {
   cursor: default;
-  color: rgb(33,33,33);
+  color: rgb(258,20,11);
+  border-radius: 5px;
 }
 
 #btn-group .active:hover {
