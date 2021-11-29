@@ -138,6 +138,7 @@ form {
 #btn-group .active {
   cursor: default;
   color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
+   border-radius: 5px;
 }
 
 #btn-group .active:hover {
