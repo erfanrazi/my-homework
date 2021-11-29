@@ -10,7 +10,8 @@ form {
   background: linear-gradient(
     13.6deg,
     rgb(149, 199, 240) 0.3%,
-    rgb(72, 97, 236) 90.5%
+    rgb(227, 237, 245) 0.3%,
+    rgb(130, 149, 255) 90.5%
   );
 }
 #searchCity {
@@ -42,7 +43,6 @@ form {
 .card-body-footer {
   display: flex;
   justify-content: space-around;
-   background-color: linear-gradient(to right, rgb(243, 238, 236),rgb(143, 195, 245),rgb(223, 173, 247));
 }
 
 .container-footer {
@@ -89,7 +89,8 @@ form {
   background: radial-gradient(
     253px at 12.6% 77.9%,
     rgb(149, 199, 240) 0.3%,
-    rgb(72, 97, 236) 90.5%
+    rgb(227, 237, 245) 0.3%,
+    rgb(130, 149, 255) 90.5%
   );
 }
 .weather-today {
