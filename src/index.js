@@ -1,27 +1,65 @@
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
-  let hours = date.getHours();
+// import "./src/styles.css";
 
-  hours = hours > 12 ? hours - 12 : hours;
-  hours = ("0" + hours).slice(-2);
+function formatDateTime(Chosenday) {
+  const weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
 
-  let minutes = date.getMinutes();
-  minutes = ("0" + minutes).slice(-2);
-  let amPm = hours < 12 ? "AM" : "PM";
+  let day = weekday[Chosenday.getDay()];
 
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
-  let day = days[date.getDay()];
-
-  return ` ${day} ${hours}:${minutes} ${amPm}`;
+  return `${day} ${Chosenday.getHours()}:${Chosenday.getMinutes()}`;
 }
 
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+let curTime = formatDateTime(new Date());
+let time = document.querySelector(".time");
+time.innerHTML = curTime;
 
-  return days[day];
+function formatDate(Chosenday) {
+  const months = new Array(12);
+  months[0] = "1";
+  months[1] = "2";
+  months[2] = "3";
+  months[3] = "4";
+  months[4] = "5";
+  months[5] = "6";
+  months[6] = "7";
+  months[7] = "8";
+  months[8] = "9";
+  months[9] = "10";
+  months[10] = "11";
+  months[11] = "12";
+
+  let month = months[Chosenday.getMonth()];
+
+  return `${month}/${Chosenday.getDate()}/${Chosenday.getFullYear()}`;
 }
+
+let curDate = document.querySelector(".date");
+curDate.innerHTML = formatDate(new Date());
+
+let city_input = document.querySelector(".city-input");
+let city_header = document.querySelector(".header h2");
+let input = document.querySelector("#searchCity");
+let apiKey = "7ae73a0fdb9a246291b5e3911d1cd392";
+
+function search(searchCity) {
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&units=metric&appid=${apiKey}`;
+    axios.get(url).then(temperature);
+}
+
+city_input.addEventListener("submit", function (e) {
+  e.preventDefault();
+  search(document.getElementById("searchCity").value);  
+});
+
+let city = document.querySelector(".header h2");
+let btn_search = document.querySelector(".btn-search");
+
 
 function displayForecast(response) {
   let forecast = response.data.daily;
